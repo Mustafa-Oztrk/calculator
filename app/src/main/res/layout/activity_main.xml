@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="100px"
+
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            />
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="200px"
+
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            />
+
+
+        <TextView
+            android:id="@+id/sonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sonuç : "
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="50px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="70px"
+            >
+
+
+            <Button
+                android:onClick="topla"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:text="+"
+                android:layout_marginRight="20px"/>
+
+            <Button
+
+                android:onClick="cikar"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:text="-"
+                android:layout_marginRight="20px"/>
+
+            <Button
+                android:onClick="carpma"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:text="x"
+                android:layout_marginRight="20px"/>
+
+            <Button
+                android:onClick="bolme"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:text="/"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
